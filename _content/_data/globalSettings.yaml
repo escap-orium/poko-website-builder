@@ -1,5 +1,5 @@
 siteName: Escap'Orium
-productionUrl: https://escap-orium.github.io/poko-website-builder/
+productionUrl: https://www.escaporium.eu/
 languages:
   - code: fr
     status: published
@@ -15,4 +15,4 @@ collections:
 newTabLinkTypes:
   - external
 metadata:
-  image: ''
+  image: ""
