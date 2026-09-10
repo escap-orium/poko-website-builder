@@ -1,23 +1,24 @@
-siteName: poko demo
-productionUrl: https://m4rrc0.github.io/poko-website-builder
-htmlHead: ''
-cssHead: ''
+siteName: Escap'Orium
+productionUrl: https://escap-orium.github.io/poko-website-builder/
 languages:
   - code: en
     status: published
-    name: English
-    isCmsDefault: false
-    isWebsiteDefault: false
+    keepUrlPrefix: true
     customUrlPrefix: null
+    isWebsiteDefault: false
+    isCmsDefault: false
+    name: English
   - code: fr
     status: published
-    name: Français
-    isCmsDefault: true
-    isWebsiteDefault: true
+    keepUrlPrefix: true
     customUrlPrefix:
       prefix: ''
+    isWebsiteDefault: true
+    isCmsDefault: true
+    name: Français
 collections:
-  - articles
-  - people
+  - organizations
+newTabLinkTypes:
+  - external
 metadata:
   image: ''
