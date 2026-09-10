@@ -10,3 +10,9 @@ eleventyNavigation:
 ---
 
 # Portfolio
+
+{% sectionCollection  %}
+
+{% collection collection="portfolio", type="flow", itemPartial="portfolio-card" %}{% endcollection %}
+
+{% endsectionCollection %}
