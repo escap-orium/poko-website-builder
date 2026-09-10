@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="{{ lang or 'en' }}" class="no-js {{ htmlClass }}">
+    <head>
+        {% partial "_html-head-default.md" %}
+        {% getBundle "html", "head" %}
+    </head>
+    <body
+        class="{{ bodyClass }}">
+        <!-- Navigation -->
+        {% partial "headless/page-nav.11ty.js" %}
+        <!-- Content -->
+        <main>
+            <article>
+                <header>
+                    <h1>{{ name }}</h1>
+                    {% if client %}
+                        <p>{{ client | safe }}</p>
+                    {% endif %}
+                    <dl class="info-list">
+                        {% if projectDate %}
+                            <dt>Date</dt>
+                            <dd>{{ projectDate }}</dd>
+                        {% endif %}
+                        {% if location %}
+                            <dt>Lieu</dt>
+                            <dd>{{ location }}</dd>
+                        {% endif %}
+                        {% if experienceType %}
+                            <dt>Type</dt>
+                            <dd>{{ experienceType }}</dd>
+                        {% endif %}
+                        {% if playerCount %}
+                            <dt>Joueurs</dt>
+                            <dd>{{ playerCount }}</dd>
+                        {% endif %}
+                        {% if ageRecommendationMin %}
+                            <dt>Âge</dt>
+                            <dd>{{ ageRecommendationMin }}+</dd>
+                        {% endif %}
+                        {% if duration %}
+                            <dt>Durée</dt>
+                            <dd>{{ duration }} minutes</dd>
+                        {% endif %}
+                        {% if teamCount %}
+                            <dt>Équipes</dt>
+                            <dd>{{ teamCount }}</dd>
+                        {% endif %}
+                    </dl>
+                    {% if availability %}
+                        <div class="width-prose prose box border">{{ availability | md }}</div>
+                    {% endif %}
+                </header>
+                {% if pitch %}
+                    <section class="palette--contrast">
+                        <h2>Pitch</h2>
+                        {{ pitch | md }}
+                    </section>
+                {% endif %}
+                {% if mechanics %}
+                    <section>
+                        <details>
+                            <summary>
+                                <h2>Fonctionnement</h2>
+                            </summary>
+                            {{ mechanics | md }}
+                        </details>
+                    </section>
+                {% endif %}
+                {% if credits and credits.length %}
+                    <section>
+                        <h2>Crédits</h2>
+                        <ul>
+                            {% for credit in credits %}
+                                <li>{{ credit | md }}</li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                {% endif %}
+                {% if more %}
+                    <section>
+                        <h2>En savoir plus</h2>
+                        {{ more | md }}
+                    </section>
+                {% endif %}
+                {% if makingOf %}
+                    <section>
+                        <h2>Le making of</h2>
+                        {{ makingOf | md }}
+                    </section>
+                {% endif %}
+                {% if gallery and gallery.length %}
+                    <section>
+                        <h2>Galerie</h2>
+                        {% for image in gallery %}
+                            <figure>
+                                <img src="{{ image.src }}" alt="{{ image.alt }}" {% if image.title %} title="{{ image.title }}" {% endif %} loading="{{ image.loading or 'lazy' }}"/>
+                                {% if image.title %}
+                                    <figcaption>{{ image.title }}</figcaption>
+                                {% endif %}
+                            </figure>
+                        {% endfor %}
+                    </section>
+                {% endif %}
+            </article>
+        </main>
+        <!-- Footer -->
+        {% partial "headless/page-footer.11ty.js" %}
+    </body>
+    <!-- Injected page styles -->
+    {% if pageStyles %}
+        <style>
+            {{pageStyles | safe}}</style>
+    {% endif %}
+</html>
+<style>
+    .info-list dt {
+        float: left;
+        margin-inline-end: 0.5em;
+    }
+    .info-list dt::after {
+        content: ": ";
+    }
+</style>

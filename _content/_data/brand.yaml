@@ -1,0 +1,72 @@
+ctxCssImport: true
+inlineAllStyles: true
+widthsContexts:
+  - name: main
+    max: 80rem
+    prose: 50rem
+fontStacksContexts:
+  - name: main
+    body:
+      native: classical-humanist
+    heading:
+      native: didone
+      custom: Federo
+    code:
+      native: monospace-code
+customFontsImport:
+  - name: Federo
+    source:
+      type: fontsource
+      name: Federo
+      weights:
+        - '400'
+      styles:
+        - normal
+      subsets:
+        - latin
+typeScales:
+  - name: main
+    minFontSize: 18
+    maxFontSize: 20
+    minTypeScale: 1.2
+    maxTypeScale: 1.25
+colors:
+  - name: white
+    value: '#ffffff'
+  - name: red
+    value: '#88291c'
+  - name: red-medium
+    value: '#983d24'
+  - name: red-light
+    value: '#bf694a'
+  - name: emerald
+    value: '#121f1b'
+  - name: emerald-medium
+    value: '#3e4843'
+  - name: emerald-light
+    value: '#727362'
+  - name: sand-dark
+    value: '#4d3f30'
+  - name: sand
+    value: '#b49570'
+  - name: sand-medium
+    value: '#d9be98'
+  - name: sand-light
+    value: '#f2e8da'
+palettes:
+  - name: main
+    read: red
+    tone: red-medium
+    pop: sand-dark
+    neutral: sand-light
+  - name: emerald
+    read: emerald
+    tone: emerald-medium
+    pop: red-medium
+    neutral: sand-light
+styleContexts:
+  - name: main
+    widthsContext: main
+    fontStacksContext: main
+    typeScale: main
+    palette: main
