@@ -15,7 +15,7 @@ Escap'Orium est un studio de design basé à Bruxelles, en Belgique, spécialis�
 
 Le studio a été créé par Navid O'Lari, artiste et activiste bruxellois, actif depuis 2016 dans le milieu, après des étude d'audiovisuel à l'IAD et à l'école Agnès Varda et un passage dans deux grosses enseignes d'escape room de la capitale : Enygma et Escape Prod.
 
-Le studio évolue au sein du fablab OpenFab situé à Ixelles, un tier-lieu
+Le studio évolue au sein du fablab OpenFab situé, un atelier partagé à Ixelles
 
 L'Escape Room (aussi appelé Escape Game) est un « jeu d'évasion grandeur nature » qui trouve ses origines notamment dans les premiers  'livres dont vous êtes le héros', les jeux d'aventures textuelles sur les premiers ordinateurs, puis plus tard les jeux vidéos comme Myst, pour ne citer que celui-là. Il puise son énergie dans notre envie de vivre des aventures, de nous réveiller un jour et de trouver une lettre d'un grand oncle disparu qui nous demande de continuer sa quête, de nous évader de prison, ou tout simplement de sauver le monde.
 
