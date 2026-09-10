@@ -11,6 +11,7 @@ collections:
   - organizations
   - events
   - creativeWorks
+  - people
 newTabLinkTypes:
   - external
 metadata:
