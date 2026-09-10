@@ -9,6 +9,8 @@ languages:
     keepUrlPrefix: true
 collections:
   - organizations
+  - events
+  - creativeWorks
 newTabLinkTypes:
   - external
 metadata:
