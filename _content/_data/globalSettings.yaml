@@ -1,21 +1,12 @@
 siteName: Escap'Orium
 productionUrl: https://escap-orium.github.io/poko-website-builder/
 languages:
-  - code: en
-    status: published
-    keepUrlPrefix: true
-    customUrlPrefix: null
-    isWebsiteDefault: false
-    isCmsDefault: false
-    name: English
   - code: fr
     status: published
     keepUrlPrefix: true
-    customUrlPrefix:
-      prefix: ''
-    isWebsiteDefault: true
-    isCmsDefault: true
-    name: Français
+  - code: en
+    status: published
+    keepUrlPrefix: true
 collections:
   - organizations
 newTabLinkTypes:
