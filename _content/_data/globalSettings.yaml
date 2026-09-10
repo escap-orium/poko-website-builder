@@ -18,5 +18,6 @@ languages:
       prefix: ''
 collections:
   - articles
+  - people
 metadata:
   image: ''
